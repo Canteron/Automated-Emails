@@ -1,0 +1,22 @@
+Title: Automated Emails
+Description: An app that reads use names, email adresses, and interests from a Excel files and sends
+a email to each users with news feeds about the user´s interest every morning.
+Objects:
+         ExcelFile:
+            filepath
+            get_data()
+         Email:
+            sender
+            receiver
+            subject
+            body
+            send()
+         NewsFeed:
+            data
+            get()
+
+COMENTARIO
+            La clase App no suele ser necesaria
+            Aqui a pesar de que distinguimos entre usuarios no es necesaria la clase usuario porque
+            no vamos a manipular los datos del usuario, solamente los leemos de un Excel.
+            Aunque si la escribiemos no estaria mal, seria otra forma de hacerlo
